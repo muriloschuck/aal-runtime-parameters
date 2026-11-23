@@ -1,0 +1,3 @@
+[submodule "oai"]
+	path = oai
+	url = https://github.com/muriloschuck/openairinterface5g

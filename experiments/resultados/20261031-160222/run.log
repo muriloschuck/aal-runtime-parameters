@@ -1,0 +1,230 @@
+# 2026-10-31 16:02:22 ambiente.sh
+# repo: /home/murilo/tcc/fork/openairinterface5g @ 1d6244a836 (8 arquivos modificados)
+# BUILD=/home/murilo/tcc/fork/openairinterface5g/build SEEDS='1 2 3 4 5' TRIALS=1000 SNRS='0 1 2 3 4 4.6 4.8 5.0 5.2 5.4 5.6 5.8 6.0 7 8' CORES=0-3 DPDK_CORES=0-1
+# host: Intel(R) Core(TM) i5-8300H CPU @ 2.30GHz, 8 CPUs
+16:02:22 semente 1 SNR 0
+16:02:22 $ OAI_RNGSEED=1 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 0 -S 0 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build  > b0_s1_snr0.log
+16:02:26 $ OAI_RNGSEED=1 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 0 -S 0 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build --loader.ldpc.shlibversion _aal --nrLDPC_coding_aal.dpdk_dev baseband_oai_sw --nrLDPC_coding_aal.dpdk_core_list 0-1 > b1_s1_snr0.log
+16:02:31 semente 1 SNR 1
+16:02:31 $ OAI_RNGSEED=1 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 1 -S 1 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build  > b0_s1_snr1.log
+16:02:35 $ OAI_RNGSEED=1 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 1 -S 1 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build --loader.ldpc.shlibversion _aal --nrLDPC_coding_aal.dpdk_dev baseband_oai_sw --nrLDPC_coding_aal.dpdk_core_list 0-1 > b1_s1_snr1.log
+16:02:41 semente 1 SNR 2
+16:02:41 $ OAI_RNGSEED=1 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 2 -S 2 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build  > b0_s1_snr2.log
+16:02:43 $ OAI_RNGSEED=1 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 2 -S 2 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build --loader.ldpc.shlibversion _aal --nrLDPC_coding_aal.dpdk_dev baseband_oai_sw --nrLDPC_coding_aal.dpdk_core_list 0-1 > b1_s1_snr2.log
+16:02:47 semente 1 SNR 3
+16:02:47 $ OAI_RNGSEED=1 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 3 -S 3 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build  > b0_s1_snr3.log
+16:02:49 $ OAI_RNGSEED=1 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 3 -S 3 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build --loader.ldpc.shlibversion _aal --nrLDPC_coding_aal.dpdk_dev baseband_oai_sw --nrLDPC_coding_aal.dpdk_core_list 0-1 > b1_s1_snr3.log
+16:02:52 semente 1 SNR 4
+16:02:52 $ OAI_RNGSEED=1 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 4 -S 4 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build  > b0_s1_snr4.log
+16:02:55 $ OAI_RNGSEED=1 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 4 -S 4 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build --loader.ldpc.shlibversion _aal --nrLDPC_coding_aal.dpdk_dev baseband_oai_sw --nrLDPC_coding_aal.dpdk_core_list 0-1 > b1_s1_snr4.log
+16:02:58 semente 1 SNR 4.6
+16:02:58 $ OAI_RNGSEED=1 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 4.6 -S 4.6 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build  > b0_s1_snr4.6.log
+16:03:01 $ OAI_RNGSEED=1 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 4.6 -S 4.6 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build --loader.ldpc.shlibversion _aal --nrLDPC_coding_aal.dpdk_dev baseband_oai_sw --nrLDPC_coding_aal.dpdk_core_list 0-1 > b1_s1_snr4.6.log
+16:03:04 semente 1 SNR 4.8
+16:03:04 $ OAI_RNGSEED=1 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 4.8 -S 4.8 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build  > b0_s1_snr4.8.log
+16:03:06 $ OAI_RNGSEED=1 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 4.8 -S 4.8 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build --loader.ldpc.shlibversion _aal --nrLDPC_coding_aal.dpdk_dev baseband_oai_sw --nrLDPC_coding_aal.dpdk_core_list 0-1 > b1_s1_snr4.8.log
+16:03:10 semente 1 SNR 5.0
+16:03:10 $ OAI_RNGSEED=1 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 5.0 -S 5.0 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build  > b0_s1_snr5.0.log
+16:03:12 $ OAI_RNGSEED=1 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 5.0 -S 5.0 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build --loader.ldpc.shlibversion _aal --nrLDPC_coding_aal.dpdk_dev baseband_oai_sw --nrLDPC_coding_aal.dpdk_core_list 0-1 > b1_s1_snr5.0.log
+16:03:15 semente 1 SNR 5.2
+16:03:15 $ OAI_RNGSEED=1 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 5.2 -S 5.2 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build  > b0_s1_snr5.2.log
+16:03:18 $ OAI_RNGSEED=1 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 5.2 -S 5.2 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build --loader.ldpc.shlibversion _aal --nrLDPC_coding_aal.dpdk_dev baseband_oai_sw --nrLDPC_coding_aal.dpdk_core_list 0-1 > b1_s1_snr5.2.log
+16:03:21 semente 1 SNR 5.4
+16:03:21 $ OAI_RNGSEED=1 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 5.4 -S 5.4 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build  > b0_s1_snr5.4.log
+16:03:23 $ OAI_RNGSEED=1 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 5.4 -S 5.4 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build --loader.ldpc.shlibversion _aal --nrLDPC_coding_aal.dpdk_dev baseband_oai_sw --nrLDPC_coding_aal.dpdk_core_list 0-1 > b1_s1_snr5.4.log
+16:03:25 semente 1 SNR 5.6
+16:03:25 $ OAI_RNGSEED=1 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 5.6 -S 5.6 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build  > b0_s1_snr5.6.log
+16:03:27 $ OAI_RNGSEED=1 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 5.6 -S 5.6 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build --loader.ldpc.shlibversion _aal --nrLDPC_coding_aal.dpdk_dev baseband_oai_sw --nrLDPC_coding_aal.dpdk_core_list 0-1 > b1_s1_snr5.6.log
+16:03:29 semente 1 SNR 5.8
+16:03:29 $ OAI_RNGSEED=1 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 5.8 -S 5.8 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build  > b0_s1_snr5.8.log
+16:03:31 $ OAI_RNGSEED=1 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 5.8 -S 5.8 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build --loader.ldpc.shlibversion _aal --nrLDPC_coding_aal.dpdk_dev baseband_oai_sw --nrLDPC_coding_aal.dpdk_core_list 0-1 > b1_s1_snr5.8.log
+16:03:32 semente 1 SNR 6.0
+16:03:32 $ OAI_RNGSEED=1 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 6.0 -S 6.0 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build  > b0_s1_snr6.0.log
+16:03:34 $ OAI_RNGSEED=1 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 6.0 -S 6.0 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build --loader.ldpc.shlibversion _aal --nrLDPC_coding_aal.dpdk_dev baseband_oai_sw --nrLDPC_coding_aal.dpdk_core_list 0-1 > b1_s1_snr6.0.log
+16:03:36 semente 1 SNR 7
+16:03:36 $ OAI_RNGSEED=1 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 7 -S 7 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build  > b0_s1_snr7.log
+16:03:37 $ OAI_RNGSEED=1 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 7 -S 7 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build --loader.ldpc.shlibversion _aal --nrLDPC_coding_aal.dpdk_dev baseband_oai_sw --nrLDPC_coding_aal.dpdk_core_list 0-1 > b1_s1_snr7.log
+16:03:39 semente 1 SNR 8
+16:03:39 $ OAI_RNGSEED=1 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 8 -S 8 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build  > b0_s1_snr8.log
+16:03:40 $ OAI_RNGSEED=1 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 8 -S 8 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build --loader.ldpc.shlibversion _aal --nrLDPC_coding_aal.dpdk_dev baseband_oai_sw --nrLDPC_coding_aal.dpdk_core_list 0-1 > b1_s1_snr8.log
+16:03:42 semente 2 SNR 0
+16:03:42 $ OAI_RNGSEED=2 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 0 -S 0 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build  > b0_s2_snr0.log
+16:03:46 $ OAI_RNGSEED=2 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 0 -S 0 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build --loader.ldpc.shlibversion _aal --nrLDPC_coding_aal.dpdk_dev baseband_oai_sw --nrLDPC_coding_aal.dpdk_core_list 0-1 > b1_s2_snr0.log
+16:03:51 semente 2 SNR 1
+16:03:51 $ OAI_RNGSEED=2 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 1 -S 1 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build  > b0_s2_snr1.log
+16:03:55 $ OAI_RNGSEED=2 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 1 -S 1 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build --loader.ldpc.shlibversion _aal --nrLDPC_coding_aal.dpdk_dev baseband_oai_sw --nrLDPC_coding_aal.dpdk_core_list 0-1 > b1_s2_snr1.log
+16:03:59 semente 2 SNR 2
+16:03:59 $ OAI_RNGSEED=2 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 2 -S 2 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build  > b0_s2_snr2.log
+16:04:02 $ OAI_RNGSEED=2 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 2 -S 2 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build --loader.ldpc.shlibversion _aal --nrLDPC_coding_aal.dpdk_dev baseband_oai_sw --nrLDPC_coding_aal.dpdk_core_list 0-1 > b1_s2_snr2.log
+16:04:05 semente 2 SNR 3
+16:04:05 $ OAI_RNGSEED=2 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 3 -S 3 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build  > b0_s2_snr3.log
+16:04:08 $ OAI_RNGSEED=2 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 3 -S 3 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build --loader.ldpc.shlibversion _aal --nrLDPC_coding_aal.dpdk_dev baseband_oai_sw --nrLDPC_coding_aal.dpdk_core_list 0-1 > b1_s2_snr3.log
+16:04:11 semente 2 SNR 4
+16:04:11 $ OAI_RNGSEED=2 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 4 -S 4 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build  > b0_s2_snr4.log
+16:04:13 $ OAI_RNGSEED=2 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 4 -S 4 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build --loader.ldpc.shlibversion _aal --nrLDPC_coding_aal.dpdk_dev baseband_oai_sw --nrLDPC_coding_aal.dpdk_core_list 0-1 > b1_s2_snr4.log
+16:04:17 semente 2 SNR 4.6
+16:04:17 $ OAI_RNGSEED=2 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 4.6 -S 4.6 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build  > b0_s2_snr4.6.log
+16:04:19 $ OAI_RNGSEED=2 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 4.6 -S 4.6 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build --loader.ldpc.shlibversion _aal --nrLDPC_coding_aal.dpdk_dev baseband_oai_sw --nrLDPC_coding_aal.dpdk_core_list 0-1 > b1_s2_snr4.6.log
+16:04:22 semente 2 SNR 4.8
+16:04:22 $ OAI_RNGSEED=2 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 4.8 -S 4.8 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build  > b0_s2_snr4.8.log
+16:04:25 $ OAI_RNGSEED=2 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 4.8 -S 4.8 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build --loader.ldpc.shlibversion _aal --nrLDPC_coding_aal.dpdk_dev baseband_oai_sw --nrLDPC_coding_aal.dpdk_core_list 0-1 > b1_s2_snr4.8.log
+16:04:28 semente 2 SNR 5.0
+16:04:28 $ OAI_RNGSEED=2 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 5.0 -S 5.0 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build  > b0_s2_snr5.0.log
+16:04:30 $ OAI_RNGSEED=2 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 5.0 -S 5.0 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build --loader.ldpc.shlibversion _aal --nrLDPC_coding_aal.dpdk_dev baseband_oai_sw --nrLDPC_coding_aal.dpdk_core_list 0-1 > b1_s2_snr5.0.log
+16:04:33 semente 2 SNR 5.2
+16:04:33 $ OAI_RNGSEED=2 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 5.2 -S 5.2 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build  > b0_s2_snr5.2.log
+16:04:36 $ OAI_RNGSEED=2 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 5.2 -S 5.2 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build --loader.ldpc.shlibversion _aal --nrLDPC_coding_aal.dpdk_dev baseband_oai_sw --nrLDPC_coding_aal.dpdk_core_list 0-1 > b1_s2_snr5.2.log
+16:04:39 semente 2 SNR 5.4
+16:04:39 $ OAI_RNGSEED=2 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 5.4 -S 5.4 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build  > b0_s2_snr5.4.log
+16:04:41 $ OAI_RNGSEED=2 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 5.4 -S 5.4 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build --loader.ldpc.shlibversion _aal --nrLDPC_coding_aal.dpdk_dev baseband_oai_sw --nrLDPC_coding_aal.dpdk_core_list 0-1 > b1_s2_snr5.4.log
+16:04:43 semente 2 SNR 5.6
+16:04:43 $ OAI_RNGSEED=2 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 5.6 -S 5.6 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build  > b0_s2_snr5.6.log
+16:04:45 $ OAI_RNGSEED=2 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 5.6 -S 5.6 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build --loader.ldpc.shlibversion _aal --nrLDPC_coding_aal.dpdk_dev baseband_oai_sw --nrLDPC_coding_aal.dpdk_core_list 0-1 > b1_s2_snr5.6.log
+16:04:47 semente 2 SNR 5.8
+16:04:47 $ OAI_RNGSEED=2 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 5.8 -S 5.8 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build  > b0_s2_snr5.8.log
+16:04:48 $ OAI_RNGSEED=2 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 5.8 -S 5.8 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build --loader.ldpc.shlibversion _aal --nrLDPC_coding_aal.dpdk_dev baseband_oai_sw --nrLDPC_coding_aal.dpdk_core_list 0-1 > b1_s2_snr5.8.log
+16:04:50 semente 2 SNR 6.0
+16:04:50 $ OAI_RNGSEED=2 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 6.0 -S 6.0 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build  > b0_s2_snr6.0.log
+16:04:52 $ OAI_RNGSEED=2 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 6.0 -S 6.0 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build --loader.ldpc.shlibversion _aal --nrLDPC_coding_aal.dpdk_dev baseband_oai_sw --nrLDPC_coding_aal.dpdk_core_list 0-1 > b1_s2_snr6.0.log
+16:04:53 semente 2 SNR 7
+16:04:53 $ OAI_RNGSEED=2 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 7 -S 7 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build  > b0_s2_snr7.log
+16:04:55 $ OAI_RNGSEED=2 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 7 -S 7 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build --loader.ldpc.shlibversion _aal --nrLDPC_coding_aal.dpdk_dev baseband_oai_sw --nrLDPC_coding_aal.dpdk_core_list 0-1 > b1_s2_snr7.log
+16:04:56 semente 2 SNR 8
+16:04:56 $ OAI_RNGSEED=2 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 8 -S 8 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build  > b0_s2_snr8.log
+16:04:58 $ OAI_RNGSEED=2 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 8 -S 8 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build --loader.ldpc.shlibversion _aal --nrLDPC_coding_aal.dpdk_dev baseband_oai_sw --nrLDPC_coding_aal.dpdk_core_list 0-1 > b1_s2_snr8.log
+16:05:00 semente 3 SNR 0
+16:05:00 $ OAI_RNGSEED=3 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 0 -S 0 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build  > b0_s3_snr0.log
+16:05:03 $ OAI_RNGSEED=3 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 0 -S 0 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build --loader.ldpc.shlibversion _aal --nrLDPC_coding_aal.dpdk_dev baseband_oai_sw --nrLDPC_coding_aal.dpdk_core_list 0-1 > b1_s3_snr0.log
+16:05:08 semente 3 SNR 1
+16:05:08 $ OAI_RNGSEED=3 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 1 -S 1 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build  > b0_s3_snr1.log
+16:05:12 $ OAI_RNGSEED=3 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 1 -S 1 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build --loader.ldpc.shlibversion _aal --nrLDPC_coding_aal.dpdk_dev baseband_oai_sw --nrLDPC_coding_aal.dpdk_core_list 0-1 > b1_s3_snr1.log
+16:05:17 semente 3 SNR 2
+16:05:17 $ OAI_RNGSEED=3 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 2 -S 2 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build  > b0_s3_snr2.log
+16:05:19 $ OAI_RNGSEED=3 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 2 -S 2 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build --loader.ldpc.shlibversion _aal --nrLDPC_coding_aal.dpdk_dev baseband_oai_sw --nrLDPC_coding_aal.dpdk_core_list 0-1 > b1_s3_snr2.log
+16:05:23 semente 3 SNR 3
+16:05:23 $ OAI_RNGSEED=3 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 3 -S 3 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build  > b0_s3_snr3.log
+16:05:26 $ OAI_RNGSEED=3 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 3 -S 3 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build --loader.ldpc.shlibversion _aal --nrLDPC_coding_aal.dpdk_dev baseband_oai_sw --nrLDPC_coding_aal.dpdk_core_list 0-1 > b1_s3_snr3.log
+16:05:29 semente 3 SNR 4
+16:05:29 $ OAI_RNGSEED=3 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 4 -S 4 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build  > b0_s3_snr4.log
+16:05:31 $ OAI_RNGSEED=3 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 4 -S 4 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build --loader.ldpc.shlibversion _aal --nrLDPC_coding_aal.dpdk_dev baseband_oai_sw --nrLDPC_coding_aal.dpdk_core_list 0-1 > b1_s3_snr4.log
+16:05:34 semente 3 SNR 4.6
+16:05:34 $ OAI_RNGSEED=3 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 4.6 -S 4.6 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build  > b0_s3_snr4.6.log
+16:05:37 $ OAI_RNGSEED=3 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 4.6 -S 4.6 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build --loader.ldpc.shlibversion _aal --nrLDPC_coding_aal.dpdk_dev baseband_oai_sw --nrLDPC_coding_aal.dpdk_core_list 0-1 > b1_s3_snr4.6.log
+16:05:40 semente 3 SNR 4.8
+16:05:40 $ OAI_RNGSEED=3 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 4.8 -S 4.8 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build  > b0_s3_snr4.8.log
+16:05:42 $ OAI_RNGSEED=3 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 4.8 -S 4.8 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build --loader.ldpc.shlibversion _aal --nrLDPC_coding_aal.dpdk_dev baseband_oai_sw --nrLDPC_coding_aal.dpdk_core_list 0-1 > b1_s3_snr4.8.log
+16:05:45 semente 3 SNR 5.0
+16:05:45 $ OAI_RNGSEED=3 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 5.0 -S 5.0 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build  > b0_s3_snr5.0.log
+16:05:48 $ OAI_RNGSEED=3 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 5.0 -S 5.0 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build --loader.ldpc.shlibversion _aal --nrLDPC_coding_aal.dpdk_dev baseband_oai_sw --nrLDPC_coding_aal.dpdk_core_list 0-1 > b1_s3_snr5.0.log
+16:05:51 semente 3 SNR 5.2
+16:05:51 $ OAI_RNGSEED=3 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 5.2 -S 5.2 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build  > b0_s3_snr5.2.log
+16:05:53 $ OAI_RNGSEED=3 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 5.2 -S 5.2 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build --loader.ldpc.shlibversion _aal --nrLDPC_coding_aal.dpdk_dev baseband_oai_sw --nrLDPC_coding_aal.dpdk_core_list 0-1 > b1_s3_snr5.2.log
+16:05:57 semente 3 SNR 5.4
+16:05:57 $ OAI_RNGSEED=3 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 5.4 -S 5.4 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build  > b0_s3_snr5.4.log
+16:05:59 $ OAI_RNGSEED=3 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 5.4 -S 5.4 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build --loader.ldpc.shlibversion _aal --nrLDPC_coding_aal.dpdk_dev baseband_oai_sw --nrLDPC_coding_aal.dpdk_core_list 0-1 > b1_s3_snr5.4.log
+16:06:01 semente 3 SNR 5.6
+16:06:01 $ OAI_RNGSEED=3 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 5.6 -S 5.6 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build  > b0_s3_snr5.6.log
+16:06:03 $ OAI_RNGSEED=3 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 5.6 -S 5.6 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build --loader.ldpc.shlibversion _aal --nrLDPC_coding_aal.dpdk_dev baseband_oai_sw --nrLDPC_coding_aal.dpdk_core_list 0-1 > b1_s3_snr5.6.log
+16:06:04 semente 3 SNR 5.8
+16:06:04 $ OAI_RNGSEED=3 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 5.8 -S 5.8 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build  > b0_s3_snr5.8.log
+16:06:06 $ OAI_RNGSEED=3 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 5.8 -S 5.8 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build --loader.ldpc.shlibversion _aal --nrLDPC_coding_aal.dpdk_dev baseband_oai_sw --nrLDPC_coding_aal.dpdk_core_list 0-1 > b1_s3_snr5.8.log
+16:06:08 semente 3 SNR 6.0
+16:06:08 $ OAI_RNGSEED=3 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 6.0 -S 6.0 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build  > b0_s3_snr6.0.log
+16:06:09 $ OAI_RNGSEED=3 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 6.0 -S 6.0 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build --loader.ldpc.shlibversion _aal --nrLDPC_coding_aal.dpdk_dev baseband_oai_sw --nrLDPC_coding_aal.dpdk_core_list 0-1 > b1_s3_snr6.0.log
+16:06:11 semente 3 SNR 7
+16:06:11 $ OAI_RNGSEED=3 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 7 -S 7 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build  > b0_s3_snr7.log
+16:06:12 $ OAI_RNGSEED=3 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 7 -S 7 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build --loader.ldpc.shlibversion _aal --nrLDPC_coding_aal.dpdk_dev baseband_oai_sw --nrLDPC_coding_aal.dpdk_core_list 0-1 > b1_s3_snr7.log
+16:06:14 semente 3 SNR 8
+16:06:14 $ OAI_RNGSEED=3 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 8 -S 8 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build  > b0_s3_snr8.log
+16:06:15 $ OAI_RNGSEED=3 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 8 -S 8 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build --loader.ldpc.shlibversion _aal --nrLDPC_coding_aal.dpdk_dev baseband_oai_sw --nrLDPC_coding_aal.dpdk_core_list 0-1 > b1_s3_snr8.log
+16:06:17 semente 4 SNR 0
+16:06:17 $ OAI_RNGSEED=4 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 0 -S 0 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build  > b0_s4_snr0.log
+16:06:21 $ OAI_RNGSEED=4 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 0 -S 0 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build --loader.ldpc.shlibversion _aal --nrLDPC_coding_aal.dpdk_dev baseband_oai_sw --nrLDPC_coding_aal.dpdk_core_list 0-1 > b1_s4_snr0.log
+16:06:26 semente 4 SNR 1
+16:06:26 $ OAI_RNGSEED=4 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 1 -S 1 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build  > b0_s4_snr1.log
+16:06:30 $ OAI_RNGSEED=4 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 1 -S 1 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build --loader.ldpc.shlibversion _aal --nrLDPC_coding_aal.dpdk_dev baseband_oai_sw --nrLDPC_coding_aal.dpdk_core_list 0-1 > b1_s4_snr1.log
+16:06:34 semente 4 SNR 2
+16:06:34 $ OAI_RNGSEED=4 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 2 -S 2 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build  > b0_s4_snr2.log
+16:06:37 $ OAI_RNGSEED=4 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 2 -S 2 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build --loader.ldpc.shlibversion _aal --nrLDPC_coding_aal.dpdk_dev baseband_oai_sw --nrLDPC_coding_aal.dpdk_core_list 0-1 > b1_s4_snr2.log
+16:06:40 semente 4 SNR 3
+16:06:40 $ OAI_RNGSEED=4 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 3 -S 3 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build  > b0_s4_snr3.log
+16:06:43 $ OAI_RNGSEED=4 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 3 -S 3 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build --loader.ldpc.shlibversion _aal --nrLDPC_coding_aal.dpdk_dev baseband_oai_sw --nrLDPC_coding_aal.dpdk_core_list 0-1 > b1_s4_snr3.log
+16:06:46 semente 4 SNR 4
+16:06:46 $ OAI_RNGSEED=4 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 4 -S 4 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build  > b0_s4_snr4.log
+16:06:49 $ OAI_RNGSEED=4 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 4 -S 4 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build --loader.ldpc.shlibversion _aal --nrLDPC_coding_aal.dpdk_dev baseband_oai_sw --nrLDPC_coding_aal.dpdk_core_list 0-1 > b1_s4_snr4.log
+16:06:52 semente 4 SNR 4.6
+16:06:52 $ OAI_RNGSEED=4 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 4.6 -S 4.6 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build  > b0_s4_snr4.6.log
+16:06:54 $ OAI_RNGSEED=4 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 4.6 -S 4.6 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build --loader.ldpc.shlibversion _aal --nrLDPC_coding_aal.dpdk_dev baseband_oai_sw --nrLDPC_coding_aal.dpdk_core_list 0-1 > b1_s4_snr4.6.log
+16:06:57 semente 4 SNR 4.8
+16:06:57 $ OAI_RNGSEED=4 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 4.8 -S 4.8 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build  > b0_s4_snr4.8.log
+16:07:00 $ OAI_RNGSEED=4 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 4.8 -S 4.8 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build --loader.ldpc.shlibversion _aal --nrLDPC_coding_aal.dpdk_dev baseband_oai_sw --nrLDPC_coding_aal.dpdk_core_list 0-1 > b1_s4_snr4.8.log
+16:07:03 semente 4 SNR 5.0
+16:07:03 $ OAI_RNGSEED=4 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 5.0 -S 5.0 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build  > b0_s4_snr5.0.log
+16:07:06 $ OAI_RNGSEED=4 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 5.0 -S 5.0 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build --loader.ldpc.shlibversion _aal --nrLDPC_coding_aal.dpdk_dev baseband_oai_sw --nrLDPC_coding_aal.dpdk_core_list 0-1 > b1_s4_snr5.0.log
+16:07:09 semente 4 SNR 5.2
+16:07:09 $ OAI_RNGSEED=4 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 5.2 -S 5.2 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build  > b0_s4_snr5.2.log
+16:07:11 $ OAI_RNGSEED=4 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 5.2 -S 5.2 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build --loader.ldpc.shlibversion _aal --nrLDPC_coding_aal.dpdk_dev baseband_oai_sw --nrLDPC_coding_aal.dpdk_core_list 0-1 > b1_s4_snr5.2.log
+16:07:14 semente 4 SNR 5.4
+16:07:14 $ OAI_RNGSEED=4 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 5.4 -S 5.4 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build  > b0_s4_snr5.4.log
+16:07:16 $ OAI_RNGSEED=4 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 5.4 -S 5.4 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build --loader.ldpc.shlibversion _aal --nrLDPC_coding_aal.dpdk_dev baseband_oai_sw --nrLDPC_coding_aal.dpdk_core_list 0-1 > b1_s4_snr5.4.log
+16:07:19 semente 4 SNR 5.6
+16:07:19 $ OAI_RNGSEED=4 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 5.6 -S 5.6 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build  > b0_s4_snr5.6.log
+16:07:21 $ OAI_RNGSEED=4 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 5.6 -S 5.6 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build --loader.ldpc.shlibversion _aal --nrLDPC_coding_aal.dpdk_dev baseband_oai_sw --nrLDPC_coding_aal.dpdk_core_list 0-1 > b1_s4_snr5.6.log
+16:07:22 semente 4 SNR 5.8
+16:07:22 $ OAI_RNGSEED=4 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 5.8 -S 5.8 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build  > b0_s4_snr5.8.log
+16:07:24 $ OAI_RNGSEED=4 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 5.8 -S 5.8 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build --loader.ldpc.shlibversion _aal --nrLDPC_coding_aal.dpdk_dev baseband_oai_sw --nrLDPC_coding_aal.dpdk_core_list 0-1 > b1_s4_snr5.8.log
+16:07:26 semente 4 SNR 6.0
+16:07:26 $ OAI_RNGSEED=4 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 6.0 -S 6.0 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build  > b0_s4_snr6.0.log
+16:07:27 $ OAI_RNGSEED=4 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 6.0 -S 6.0 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build --loader.ldpc.shlibversion _aal --nrLDPC_coding_aal.dpdk_dev baseband_oai_sw --nrLDPC_coding_aal.dpdk_core_list 0-1 > b1_s4_snr6.0.log
+16:07:29 semente 4 SNR 7
+16:07:29 $ OAI_RNGSEED=4 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 7 -S 7 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build  > b0_s4_snr7.log
+16:07:30 $ OAI_RNGSEED=4 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 7 -S 7 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build --loader.ldpc.shlibversion _aal --nrLDPC_coding_aal.dpdk_dev baseband_oai_sw --nrLDPC_coding_aal.dpdk_core_list 0-1 > b1_s4_snr7.log
+16:07:32 semente 4 SNR 8
+16:07:32 $ OAI_RNGSEED=4 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 8 -S 8 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build  > b0_s4_snr8.log
+16:07:33 $ OAI_RNGSEED=4 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 8 -S 8 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build --loader.ldpc.shlibversion _aal --nrLDPC_coding_aal.dpdk_dev baseband_oai_sw --nrLDPC_coding_aal.dpdk_core_list 0-1 > b1_s4_snr8.log
+16:07:35 semente 5 SNR 0
+16:07:35 $ OAI_RNGSEED=5 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 0 -S 0 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build  > b0_s5_snr0.log
+16:07:39 $ OAI_RNGSEED=5 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 0 -S 0 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build --loader.ldpc.shlibversion _aal --nrLDPC_coding_aal.dpdk_dev baseband_oai_sw --nrLDPC_coding_aal.dpdk_core_list 0-1 > b1_s5_snr0.log
+16:07:44 semente 5 SNR 1
+16:07:44 $ OAI_RNGSEED=5 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 1 -S 1 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build  > b0_s5_snr1.log
+16:07:48 $ OAI_RNGSEED=5 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 1 -S 1 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build --loader.ldpc.shlibversion _aal --nrLDPC_coding_aal.dpdk_dev baseband_oai_sw --nrLDPC_coding_aal.dpdk_core_list 0-1 > b1_s5_snr1.log
+16:07:52 semente 5 SNR 2
+16:07:52 $ OAI_RNGSEED=5 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 2 -S 2 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build  > b0_s5_snr2.log
+16:07:55 $ OAI_RNGSEED=5 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 2 -S 2 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build --loader.ldpc.shlibversion _aal --nrLDPC_coding_aal.dpdk_dev baseband_oai_sw --nrLDPC_coding_aal.dpdk_core_list 0-1 > b1_s5_snr2.log
+16:07:58 semente 5 SNR 3
+16:07:58 $ OAI_RNGSEED=5 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 3 -S 3 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build  > b0_s5_snr3.log
+16:08:01 $ OAI_RNGSEED=5 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 3 -S 3 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build --loader.ldpc.shlibversion _aal --nrLDPC_coding_aal.dpdk_dev baseband_oai_sw --nrLDPC_coding_aal.dpdk_core_list 0-1 > b1_s5_snr3.log
+16:08:04 semente 5 SNR 4
+16:08:04 $ OAI_RNGSEED=5 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 4 -S 4 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build  > b0_s5_snr4.log
+16:08:07 $ OAI_RNGSEED=5 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 4 -S 4 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build --loader.ldpc.shlibversion _aal --nrLDPC_coding_aal.dpdk_dev baseband_oai_sw --nrLDPC_coding_aal.dpdk_core_list 0-1 > b1_s5_snr4.log
+16:08:10 semente 5 SNR 4.6
+16:08:10 $ OAI_RNGSEED=5 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 4.6 -S 4.6 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build  > b0_s5_snr4.6.log
+16:08:12 $ OAI_RNGSEED=5 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 4.6 -S 4.6 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build --loader.ldpc.shlibversion _aal --nrLDPC_coding_aal.dpdk_dev baseband_oai_sw --nrLDPC_coding_aal.dpdk_core_list 0-1 > b1_s5_snr4.6.log
+16:08:16 semente 5 SNR 4.8
+16:08:16 $ OAI_RNGSEED=5 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 4.8 -S 4.8 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build  > b0_s5_snr4.8.log
+16:08:18 $ OAI_RNGSEED=5 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 4.8 -S 4.8 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build --loader.ldpc.shlibversion _aal --nrLDPC_coding_aal.dpdk_dev baseband_oai_sw --nrLDPC_coding_aal.dpdk_core_list 0-1 > b1_s5_snr4.8.log
+16:08:21 semente 5 SNR 5.0
+16:08:21 $ OAI_RNGSEED=5 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 5.0 -S 5.0 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build  > b0_s5_snr5.0.log
+16:08:24 $ OAI_RNGSEED=5 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 5.0 -S 5.0 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build --loader.ldpc.shlibversion _aal --nrLDPC_coding_aal.dpdk_dev baseband_oai_sw --nrLDPC_coding_aal.dpdk_core_list 0-1 > b1_s5_snr5.0.log
+16:08:27 semente 5 SNR 5.2
+16:08:27 $ OAI_RNGSEED=5 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 5.2 -S 5.2 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build  > b0_s5_snr5.2.log
+16:08:29 $ OAI_RNGSEED=5 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 5.2 -S 5.2 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build --loader.ldpc.shlibversion _aal --nrLDPC_coding_aal.dpdk_dev baseband_oai_sw --nrLDPC_coding_aal.dpdk_core_list 0-1 > b1_s5_snr5.2.log
+16:08:32 semente 5 SNR 5.4
+16:08:32 $ OAI_RNGSEED=5 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 5.4 -S 5.4 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build  > b0_s5_snr5.4.log
+16:08:34 $ OAI_RNGSEED=5 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 5.4 -S 5.4 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build --loader.ldpc.shlibversion _aal --nrLDPC_coding_aal.dpdk_dev baseband_oai_sw --nrLDPC_coding_aal.dpdk_core_list 0-1 > b1_s5_snr5.4.log
+16:08:37 semente 5 SNR 5.6
+16:08:37 $ OAI_RNGSEED=5 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 5.6 -S 5.6 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build  > b0_s5_snr5.6.log
+16:08:39 $ OAI_RNGSEED=5 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 5.6 -S 5.6 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build --loader.ldpc.shlibversion _aal --nrLDPC_coding_aal.dpdk_dev baseband_oai_sw --nrLDPC_coding_aal.dpdk_core_list 0-1 > b1_s5_snr5.6.log
+16:08:41 semente 5 SNR 5.8
+16:08:41 $ OAI_RNGSEED=5 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 5.8 -S 5.8 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build  > b0_s5_snr5.8.log
+16:08:42 $ OAI_RNGSEED=5 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 5.8 -S 5.8 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build --loader.ldpc.shlibversion _aal --nrLDPC_coding_aal.dpdk_dev baseband_oai_sw --nrLDPC_coding_aal.dpdk_core_list 0-1 > b1_s5_snr5.8.log
+16:08:44 semente 5 SNR 6.0
+16:08:44 $ OAI_RNGSEED=5 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 6.0 -S 6.0 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build  > b0_s5_snr6.0.log
+16:08:45 $ OAI_RNGSEED=5 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 6.0 -S 6.0 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build --loader.ldpc.shlibversion _aal --nrLDPC_coding_aal.dpdk_dev baseband_oai_sw --nrLDPC_coding_aal.dpdk_core_list 0-1 > b1_s5_snr6.0.log
+16:08:47 semente 5 SNR 7
+16:08:47 $ OAI_RNGSEED=5 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 7 -S 7 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build  > b0_s5_snr7.log
+16:08:49 $ OAI_RNGSEED=5 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 7 -S 7 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build --loader.ldpc.shlibversion _aal --nrLDPC_coding_aal.dpdk_dev baseband_oai_sw --nrLDPC_coding_aal.dpdk_core_list 0-1 > b1_s5_snr7.log
+16:08:50 semente 5 SNR 8
+16:08:50 $ OAI_RNGSEED=5 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 8 -S 8 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build  > b0_s5_snr8.log
+16:08:52 $ OAI_RNGSEED=5 taskset -c 0-3 ./nr_ulsim -n 1000 -m 9 -r 106 -R 106 -s 8 -S 8 --loader.ldpc.shlibpath /home/murilo/tcc/fork/openairinterface5g/build --loader.ldpc.shlibversion _aal --nrLDPC_coding_aal.dpdk_dev baseband_oai_sw --nrLDPC_coding_aal.dpdk_core_list 0-1 > b1_s5_snr8.log
+B0 × B1: 75 pares, 0 DIFERENTE, 0 SEM DADOS -> /home/murilo/tcc/fork/openairinterface5g/tools/tcc/resultados/20261031-160222/relatorio.md

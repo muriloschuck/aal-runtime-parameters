@@ -1,0 +1,41 @@
+CMDLINE: "./nr_ulsim" "-n" "1000" "-m" "9" "-r" "106" "-R" "106" "-s" "0" "-S" "0" "--loader.ldpc.shlibpath" "/home/murilo/tcc/fork/openairinterface5g/build" 
+[TCC-DIAG] trial 0 round 0 payload0=2a2d4d12 tx=568787e2b351a383 rx=9d84feebd5c3c9eb
+[TCC-DIAG] trial 0 round 1 payload0=2a2d4d12 tx=6d44944d6a46e383 rx=0e35b9d5f29e09d8
+[TCC-DIAG] trial 0 round 2 payload0=2a2d4d12 tx=c702ad13707a2383 rx=78ebe5caec6bf640
+[TCC-DIAG] trial 1 round 0 payload0=2a2d4d12 tx=568787e2b351a383 rx=1ee84cd9d1eb1dda
+[TCC-DIAG] trial 1 round 1 payload0=2a2d4d12 tx=6d44944d6a46e383 rx=3740bd385bd221dd
+[TCC-DIAG] trial 1 round 2 payload0=2a2d4d12 tx=c702ad13707a2383 rx=f987f0cc44e00fec
+[TCC-DIAG] trial 2 round 0 payload0=2a2d4d12 tx=568787e2b351a383 rx=39eec3c794311121
+[TCC-DIAG] trial 2 round 1 payload0=2a2d4d12 tx=6d44944d6a46e383 rx=c6e4bb2cf6649623
+[TCC-DIAG] trial 2 round 2 payload0=2a2d4d12 tx=c702ad13707a2383 rx=2ce9dbd316ae0b38
+Initializing random number generator, seed 2
+handling optarg n
+handling optarg m
+handling optarg r
+handling optarg R
+handling optarg s
+Setting SNR0 to 0.000000
+handling optarg S
+Setting SNR1 to 0.000000
+AWGN: ricean_factor 0.000000
+Pre-allocating padded host memory for the CPU channel pipeline...
+[ULSIM]: length_dmrs: 1, l_prime_mask: 1	number_dmrs_symbols: 1, mapping_type: 1 add_pos: 0 
+[ULSIM]: CDM groups: 1, dmrs_config_type: 0, num_rbs: 106, nb_symb_sch: 12, start_symbol 0
+[ULSIM]: MCS: 9, mod order: 2, code_rate: 6790
+[ULSIM]: VALUE OF G: 29256, TBS: 19464
+*****************************************
+SNR 0.000000: n_errors (1000/1000,1000/1000,28/1000,0/28) (negative CRC), false_positive 0/1000, errors_scrambling (5373015/29256000,5366761/29256000,5419057/29256000,150314/819168)
+
+SNR 0.000000: Channel BLER (1.000000e+00,1.000000e+00,2.800000e-02,0.000000e+00 Channel BER (1.836551e-01,1.834414e-01,1.852289e-01,1.834959e-01) Avg round 3.03, Eff Rate 6442.5840 bits/slot, Eff Throughput 33.10, TBS 19464 bits/slot
+DMRS-PUSCH delay estimation: min 0, max 0, average 0.0
+*****************************************
+
+
+Num RB:	106
+Num symbols:	12
+MCS:	9
+DMRS config type:	0
+DMRS add pos:	0
+PUSCH mapping type:	1
+DMRS length:	1
+DMRS CDM gr w/o data:	1

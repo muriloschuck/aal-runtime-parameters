@@ -1,0 +1,56 @@
+CMDLINE: "./nr_ulsim" "-n" "1000" "-m" "9" "-r" "106" "-R" "106" "-s" "1" "-S" "1" "--loader.ldpc.shlibpath" "/home/murilo/tcc/fork/openairinterface5g/build" "--loader.ldpc.shlibversion" "_aal" "--nrLDPC_coding_aal.dpdk_dev" "baseband_oai_sw" "--nrLDPC_coding_aal.dpdk_core_list" "0-1" 
+[OAI_SW] núcleos carregados de /home/murilo/tcc/fork/openairinterface5g/build/libldpc.so
+EAL: memzone_reserve_aligned_thread_unsafe(): Number of requested memzone segments exceeds maximum 0
+BBDEV: Cannot allocate memzone for bbdev port data
+EAL: Driver cannot attach the device (baseband_oai_sw)
+EAL: Failed to attach device on primary process
+EAL: Detected CPU lcores: 8
+EAL: Detected NUMA nodes: 1
+EAL: Detected shared linkage of DPDK
+EAL: Multi-process socket /var/run/dpdk/b6/mp_socket
+EAL: Selected IOVA mode 'VA'
+[OAI_SW] dispositivo baseband_oai_sw criado (LDPC_ENC + LDPC_DEC, 8 filas, HARQ interna)
+[OAI_SW] fila 0 configurada (op_type=RTE_BBDEV_OP_LDPC_ENC, tamanho=16384)
+[OAI_SW] fila 1 configurada (op_type=RTE_BBDEV_OP_LDPC_DEC, tamanho=16384)
+[TCC-DIAG] trial 0 round 0 payload0=2a2d4d12 tx=568787e2b351a383 rx=63fce3ab292881d6
+[TCC-DIAG] trial 0 round 1 payload0=2a2d4d12 tx=6d44944d6a46e383 rx=f518b3880daacc30
+[TCC-DIAG] trial 0 round 2 payload0=2a2d4d12 tx=c702ad13707a2383 rx=af1f7bf562ee0c3f
+[TCC-DIAG] trial 1 round 0 payload0=2a2d4d12 tx=568787e2b351a383 rx=85d3c24797c9bc72
+[TCC-DIAG] trial 1 round 1 payload0=2a2d4d12 tx=6d44944d6a46e383 rx=1719ec20e67e2b6c
+[TCC-DIAG] trial 1 round 2 payload0=2a2d4d12 tx=c702ad13707a2383 rx=f47971caaf819ad3
+[TCC-DIAG] trial 2 round 0 payload0=2a2d4d12 tx=568787e2b351a383 rx=96da3cec0ebfcaad
+[TCC-DIAG] trial 2 round 1 payload0=2a2d4d12 tx=6d44944d6a46e383 rx=b138a21770af7fbb
+[TCC-DIAG] trial 2 round 2 payload0=2a2d4d12 tx=c702ad13707a2383 rx=34d190c39f072e78
+[TCC-DIAG] llr_scaling: CBs=9000 comprimidos(scale<1)=0 max|LLR|=97 llr_size=8 llr_decimal=0 hist max|LLR| por CB: <=127:9000 128-300:0 301-1000:0 >1000:0
+[OAI_SW] resumo: DEC 3000 chamadas / 9000 ops | ENC 3000 chamadas / 9000 ops
+Initializing random number generator, seed 2
+handling optarg n
+handling optarg m
+handling optarg r
+handling optarg R
+handling optarg s
+Setting SNR0 to 1.000000
+handling optarg S
+Setting SNR1 to 1.000000
+AWGN: ricean_factor 0.000000
+Pre-allocating padded host memory for the CPU channel pipeline...
+[ULSIM]: length_dmrs: 1, l_prime_mask: 1	number_dmrs_symbols: 1, mapping_type: 1 add_pos: 0 
+[ULSIM]: CDM groups: 1, dmrs_config_type: 0, num_rbs: 106, nb_symb_sch: 12, start_symbol 0
+[ULSIM]: MCS: 9, mod order: 2, code_rate: 6790
+[ULSIM]: VALUE OF G: 29256, TBS: 19464
+*****************************************
+SNR 1.000000: n_errors (1000/1000,1000/1000,0/1000,0/0) (negative CRC), false_positive 0/1000, errors_scrambling (4517723/29256000,4509772/29256000,4559999/29256000,0/0)
+
+SNR 1.000000: Channel BLER (1.000000e+00,1.000000e+00,0.000000e+00,-nan Channel BER (1.544204e-01,1.541486e-01,1.558654e-01,-nan) Avg round 3.00, Eff Rate 6488.0000 bits/slot, Eff Throughput 33.33, TBS 19464 bits/slot
+DMRS-PUSCH delay estimation: min 0, max 0, average 0.0
+*****************************************
+
+
+Num RB:	106
+Num symbols:	12
+MCS:	9
+DMRS config type:	0
+DMRS add pos:	0
+PUSCH mapping type:	1
+DMRS length:	1
+DMRS CDM gr w/o data:	1
