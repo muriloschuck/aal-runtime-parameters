@@ -16,6 +16,8 @@ The prototype is built on [OpenAirInterface](https://gitlab.eurecom.fr/oai/opena
 DPDK BBDev interface and publishes three runtime parameters: the decoding mode, the number of worker threads, and
 the batch size.
 
+<p align="center"><img src="img/fig_aal_ext.png" width="800" alt="AAL architecture with the proposed extension"></p>
+
 ## Repository structure
 
 ```
@@ -88,6 +90,8 @@ Three builds are compared in the thesis:
 | B1 | standard AAL path with the software LPU, extension compiled out | `-DENABLE_LDPC_AAL=ON -DENABLE_LDPC_AAL_EXT=OFF` |
 | B2 | extended AAL | `-DENABLE_LDPC_AAL=ON -DENABLE_LDPC_AAL_EXT=ON` |
 
+<p align="center"><img src="img/fig_prototype.png" width="700" alt="Decoding paths of the three builds and the control path of B2"></p>
+
 The experiments used `-DCMAKE_BUILD_TYPE=RelWithDebInfo -DENABLE_TESTS=ON`, with B2 in `oai/build/` and B1 in
 `oai/build/b1/`. The race-detection run used a separate build, `oai/build_tsan/`, with `-DSANITIZE_THREAD=ON`.
 For the general OAI build steps, see `oai/doc/LDPC_OFFLOAD_SETUP.md`.
@@ -133,6 +137,26 @@ The analyses only read `dados/` and do not need `sudo`.
 The scripts were adapted after the experiments to replace absolute paths of the original machine with these
 variables. The versions that generated the data, and the matching `SHA256SUMS`, are in the fork at tag `tcc-2026`,
 under `tools/tcc/`.
+
+## Main results
+
+Block error rate of the first transmission for B1, for B2 with default values, and for B2 in each parallel
+configuration. The curves overlap, with identical error counts in all groups.
+
+<p align="center"><img src="img/fig_res_bler.png" width="800" alt="Block error rate in the three workloads"></p>
+
+Number of decodings open when each call to the LDPC decoding function started, in W3.
+
+<p align="center"><img src="img/fig_res_concurrency.png" width="700" alt="Simultaneous decodings per configuration"></p>
+
+Time from each configuration request to its effect in the AAL implementation, for 40 changes applied during decoding.
+
+<p align="center"><img src="img/fig_res_latency.png" width="700" alt="Time from request to effect of each change"></p>
+
+Decoding time in W3 for each combination of worker threads and batch size, with 95% confidence intervals over
+15 rounds.
+
+<p align="center"><img src="img/fig_res_time.png" width="700" alt="Decoding time per configuration"></p>
 
 ## How to cite
 
